@@ -25,7 +25,11 @@ public class Produto {
 		this.preco = preco;
 	}
 
-		
+	//metodo estatico
+	public static String staticUpperCaseName(Produto p) {
+		return p.getNome().toUpperCase();
+	}
+	
 	
 	@Override
 	public String toString() {
