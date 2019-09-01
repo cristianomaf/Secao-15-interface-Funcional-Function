@@ -30,6 +30,10 @@ public class Produto {
 		return p.getNome().toUpperCase();
 	}
 	
+	//nao estatico
+	public String nonStaticUpperCaseName() {
+		return nome.toUpperCase();
+	}
 	
 	@Override
 	public String toString() {
