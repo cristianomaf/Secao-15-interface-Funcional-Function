@@ -19,10 +19,10 @@ public class Program {
 		lista.add(new Produto("Tablet", 350.00));
 		lista.add(new Produto("HD Case", 80.90));
 		
-		//Declarando Funcao lambda
-		Function<Produto,String>func = p-> p.getNome().toUpperCase();	
+		//Declarando Funcao lambda inline
+			
 		
-		List<String> nomes = lista.stream().map(func).collect(Collectors.toList());		
+		List<String> nomes = lista.stream().map( p-> p.getNome().toUpperCase()).collect(Collectors.toList());		
 		nomes.forEach(System.out::println);
 		
 	}
